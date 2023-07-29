@@ -1,0 +1,20 @@
+{
+    "name": "Usefull Commands",
+    "id": "useful-commands",
+    "version": "1.0.0",
+    "description": "Usefull Commands",
+    "options": {
+        "yqVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Install yq command"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
