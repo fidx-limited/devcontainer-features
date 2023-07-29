@@ -1,0 +1,61 @@
+{
+    "name": "Kubernetes Command Line tools",
+    "id": "kube-cli",
+    "version": "1.0.0",
+    "description": "kubectl, Helm, Hustomize, Helmfile and Tilt",
+    "options": {
+        "kubectlVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Select or enter a Kubernetes version to install"
+        },
+        "helmVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Select or enter a Helm version to install"
+        },
+        "kustomizeVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Select or enter a Kustomize version to install"
+        },
+        "helmfileVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Select or enter a Helmfile version to install"
+        },
+        "tiltVersion": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none"
+            ],
+            "default": "latest",
+            "description": "Select or enter a Helmfile version to install"
+        },
+        "installKubectxAndKubens": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install kubectx and kubens"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

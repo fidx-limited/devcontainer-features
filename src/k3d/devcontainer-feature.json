@@ -1,0 +1,20 @@
+{
+    "name": "K3d",
+    "id": "k3d",
+    "version": "1.0.0",
+    "description": "K3d",
+    "options": {
+        "k3dVersion": {
+            "type": "string",
+            "proposals": [
+                "5.5.1"
+            ],
+            "default": "5.5.1",
+            "description": "Select or enter a K3d version to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/fidx-limited/devcontainer-features/kube-cli"
+    ]
+}
