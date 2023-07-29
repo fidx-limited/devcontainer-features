@@ -16,8 +16,6 @@ jobs:
       matrix:
         features: [
             "kube-cli",
-            "k3s",
-            "k3d",
             "useful-commands",
         ]
         baseImage:
@@ -51,8 +49,6 @@ jobs:
       matrix:
         features: [
           "kube-cli",
-          "k3s",
-          "k3d",
           "useful-commands",
         ]
     steps:

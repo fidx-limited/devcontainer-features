@@ -13,8 +13,6 @@ jobs:
         with:
           filters: |
             kube-cli: ./**/kube-cli/**
-            k3s: ./**/k3s/**
-            k3d: ./**/k3d/**
             useful-commands: ./**/useful-commands/**
 
   test:
